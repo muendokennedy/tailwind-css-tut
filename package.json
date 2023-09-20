@@ -1,16 +1,16 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.3.3"
-  },
   "name": "tailwind_tut",
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
-    "prettier": "npx prettier --write .**/*.html"
+    "prettier": "npx prettier --write ./build/*.html"
   },
   "keywords": [],
   "author": "Kennedy Munyao",
   "license": "ISC",
-  "description": "A project to learn tailwind css framework"
+  "description": "A project to learn tailwind css framework",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.5.3"
+  }
 }
